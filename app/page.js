@@ -144,7 +144,7 @@ const AdminDashboard = () => {
 
       {/* STATS SECTION */}
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-4xl mx-auto px-6">
           <div className="grid grid-cols-2 gap-6">
             {stats.map((stat, i) => (
               <div key={i} className="fade-in-up" style={{animationDelay: `${i * 0.1}s`}}>
