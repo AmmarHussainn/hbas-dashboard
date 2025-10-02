@@ -114,16 +114,7 @@ const AdminDashboard = () => {
       value: projects.length, 
       icon: Briefcase
     },
-    { 
-      label: 'Active Listings', 
-      value: companies.filter(c => c.notBlacklisted).length, 
-      icon: CheckCircle
-    },
-    { 
-      label: 'Total Inquiries', 
-      value: projects.length, 
-      icon: Mail
-    }
+   
   ];
 
   return (
@@ -154,7 +145,7 @@ const AdminDashboard = () => {
       {/* STATS SECTION */}
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 gap-6">
             {stats.map((stat, i) => (
               <div key={i} className="fade-in-up" style={{animationDelay: `${i * 0.1}s`}}>
                 <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow text-center">
